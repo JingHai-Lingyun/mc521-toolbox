@@ -1,0 +1,109 @@
+html{
+    --primary:#4582ec;
+    --secondary:#adb5bd;
+    --success:#02b875;
+    --info:#17a2b8;
+    --warning:#f0ad4e;
+    --danger:#d9534f;
+    --light:#F8F9FA;
+    --dark:#343a40;
+    --bg:#ffffff;
+    --fg:#343a40;
+    --selectbg:#adb5bd;
+    --selectfg:#ffffff;
+}
+
+body{
+    margin: 20px !important;
+}
+
+.btn1{ background-color: var(--primary) !important; }
+.btn2{ background-color: var(--success) !important; }
+.btn3{ background-color: var(--info) !important; }
+.btn4{ background-color: var(--warning) !important; }
+
+.red{ color: var(--danger) !important; }
+.black{ color:var(--dark) !important; }
+
+.half-con{
+    display: flex !important;
+}
+
+.half{
+    width: 930px !important;
+    margin-right: 20px !important
+}
+
+.half2{
+    width: 930px !important;
+}
+
+.normal-btn{
+    color: var(--dark) !important;
+    background-color: #4582ec20 !important;
+}
+
+.normal-btn-2{
+    color: var(--dark) !important;
+    background-color: rgba(22, 99, 233, 0.356) !important;
+}
+
+.yellow-btn{
+    color: var(--dark) !important;
+    background-color: rgba(238, 255, 0, 0.356) !important;
+}
+
+.red-btn{
+    color: var(--dark) !important;
+    background-color: rgba(255, 8, 0, 0.25) !important;
+}
+
+.layui-btn span{
+    text-align: center !important;
+}
+
+.btn-text{
+    font-size: 26px !important;
+}
+
+.normal-line{
+    border-bottom: 2px solid var(--warning) !important;
+}
+
+.vip-bg{ background-color: #54fc54; }
+.mvp-bg{ background-color: #41c7c7; }
+.ceo-bg{ background-color: #fca800; }
+
+.jj0{ color: var(--light) !important; background: #636363 !important; }
+.jj1{ color: var(--light) !important; background-color: #707096 !important; }
+.jj2{ color: var(--light) !important; background-color: #048243 !important; }
+.jj3{ color: var(--light) !important; background-color: #04827b !important; }
+.jj4{ color: var(--light) !important; background-color: #890089 !important; }
+.jj5{ color: var(--light) !important; background-color: #890000 !important; }
+.jj6{ color: var(--light) !important; background-color: #056bb3 !important; }
+.jj7{ color: var(--light) !important; background-color: #b3b73b !important; }
+.jj8{ color: var(--light) !important; background-color: #4cb9ca !important; }
+.jj9{ color: var(--light) !important; background-color: #fb3d94 !important; }
+.jjx{ color: var(--light) !important; background-color: #da2978 !important; }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Edit layUI CSS */
+.layui-elem-field{ border-color:var(--fg) !important; }
+
+.layui-elem-field legend {
+    margin-left: 15px !important;
+    padding: 0px 4px !important;
+    font-size: 20px !important;
+}
+
+.layui-elem-quote{
+    margin-bottom: 10px !important;
+    padding: 5px 10px !important;
+    line-height: 1.8 !important;
+    border-left: 5px solid var(--warning) !important;
+    border-radius: 0 2px 2px 0 !important;
+    background-color: #fafafa !important;
+}

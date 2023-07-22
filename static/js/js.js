@@ -1,0 +1,62 @@
+layui.use(function(){
+    var layer = layui.layer;
+    var util = layui.util;
+    // 批量事件
+    util.on('lay-on', {
+        cc: function(){ window.open('https://mc521.rth1.vip') },
+        bbstea: function(){ window.open('https://www.mcbbs.net/forum-chat-1.html') },
+        b: function(){ window.open('https://bilibili.com') },
+        rth: function(){ window.open('https://host.retiehe.com') },
+        gitee: function(){ window.open('https://gitee.com') },
+        github: function(){ window.open('https://github.com') },
+        yuan: function(){ window.open('https://www.plotz.co.uk/plotz-model.php?model=Ellipse') },
+        touwei: function(){ window.open('https://jinshuju.net/f/ov7U32') },
+        /*  */
+        // Copy Page 1
+        cmd1: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/tpa') },
+        cmd2: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/tpahere') },
+        cmd3: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/msg') },
+        cmd4: function(){ layer.msg('暂时不可用哦')}, //navigator.clipboard.writeText('/reply') },
+        cmd5: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/cd') },
+        cmd6: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/spawn') },
+        cmd7: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/back') },
+        cmd8: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/sethome') },
+        cmd9: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/home') },
+        cmd10: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/delhome') },
+        cmd11: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/homes') },
+        // Copy Page 2
+        cmd1201: function(){ layer.msg('已复制'),navigator.clipboard.writeText('%i') },
+        cmd1202: function(){ layer.msg('已复制'),navigator.clipboard.writeText('%背包') },
+        cmd1203: function(){ layer.msg('暂时不可用哦')}, //navigator.clipboard.writeText('[ender]') },
+        cmd13: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/bp') },
+        cmd1401: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/bind') },
+        cmd1402: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/unbind') },
+        cmd15: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/pw') },
+        cmd16: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/qs') },
+        cmd17: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/dz') },
+        cmd18: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/rp new') },
+        cmd19: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/pay') },
+        // Copy Page 3
+        cmd20: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/ffly') },
+        cmd21: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/fly') },
+        cmd22: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/gz') },
+        cmd23: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/ec') },
+        cmd24: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/hat') },
+        cmd25: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/points pay') },
+        cmd26: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/repair') },
+        cmd27: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/es deenchant') },
+        cmd28: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/sun') },
+        cmd29: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/res') },
+        cmd30: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/res list') },
+        cmd31: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/res create') },
+        cmd32: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/res remove') },
+        cmd33: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/res set') },
+        cmd34: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/res padd') },
+        cmd35: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/res pset') },
+        cmd36: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/res pdel') },
+        cmd37: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/res tp') },
+        cmd38: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/res expand') },
+        cmd39: function(){ layer.msg('已复制'),navigator.clipboard.writeText('/res give') },
+        // Template Here -> cmd: function(){ layer.msg('已复制'),navigator.clipboard.writeText('') },
+    })
+})

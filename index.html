@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="static/css/style.css">
+<body>
+    <fieldset class="layui-elem-field">
+        <legend>网页快捷方式</legend>
+        <div class="layui-field-box">
+            <button type="button" class="layui-btn btn1" lay-on="cc"><i class="layui-icon layui-icon-link"></i> 君庭阁 - 服务器官网</button>
+            <button type="button" class="layui-btn btn2" lay-on="bbstea"><i class="layui-icon layui-icon-website"></i> MCBBS 矿工茶馆</button>
+            <button type="button" class="layui-btn btn3" lay-on="b"><i class="layui-icon layui-icon-video"></i> Bilibili</button>
+            <!--button type="button" class="layui-btn btn4" lay-on="gitee"><i class="layui-icon layui-icon-gitee red"></i> Gitee</button>
+            <button type="button" class="layui-btn btn5" lay-on="github"><i class="layui-icon layui-icon-github black"></i> Github</button-->
+            <button type="button" class="layui-btn btn1" lay-on="yuan"><i class="layui-icon layui-icon-edit"></i> 画圆工具</button>
+            <button type="button" class="layui-btn btn4" lay-on="touwei"><i class="layui-icon layui-icon-service"></i> CC投喂箱</button>
+        </div>
+    </fieldset>
+    <div class="half-con">
+        <fieldset class="layui-elem-field half">
+            <legend>君庭阁 - 指令书</legend>
+            <div class="layui-field-box">
+                <blockquote class="layui-elem-quote">点击按钮即可复制</blockquote>
+                <div class="layui-tab layui-tab-brief">
+                    <ul class="layui-tab-title">
+                        <li>基础</li>
+                        <li>特殊</li>
+                        <li>会员</li>
+                        <li>领地</li>
+                        <li class="layui-this">地皮</li>
+                        <li>结婚</li>
+                    </ul>
+                    <div class="layui-tab-content">
+                        <div class="layui-tab-item">
+                            <!-- Part 1 -->
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd1"><span class="btn-text">请求传送</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/tpa 玩家名</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd2"><span class="btn-text">请求传送过来</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/tpahere 玩家名</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd3"><span class="btn-text">私信</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/msg 玩家名 信息</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid red-btn" lay-on="cmd4"><span class="btn-text">回复</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge">暂不可用</span></button>
+                            <br><br>
+                            <hr class="normal-line"><br>
+                            <!-- Part 2 -->
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd5"><span class="btn-text">打开菜单</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/cd</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd6"><span class="btn-text">回到主城</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/spawn</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd7"><span class="btn-text">回到上一点</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/back</span></button>
+                            <br><br>
+                            <hr class="normal-line"><br>
+                            <!-- Part 3 -->
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd8"><span class="btn-text">设置家</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/sethome 名字</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd9"><span class="btn-text">回到家</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/home 名字</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd10"><span class="btn-text">删除家</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/delhome 名字</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd11"><span class="btn-text">家管理面板</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/homes</span></button>
+                        </div>
+                        <div class="layui-tab-item">
+                            <div class="layui-row">
+                                <div class="layui-col-md4">
+                                    <button type="button" class="layui-btn layui-btn-fluid grid-demo normal-btn" lay-on="cmd1201"><span class="btn-text">展示手中物品</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">%i</span></button>
+                                </div>
+                                <div class="layui-col-md4">
+                                    <button type="button" class="layui-btn layui-btn-fluid grid-demo normal-btn-2" lay-on="cmd1202"><span class="btn-text">展示个人背包</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">%背包</span></button>
+                                </div>
+                                <div class="layui-col-md4">
+                                    <button type="button" class="layui-btn layui-btn-fluid grid-demo red-btn" lay-on="cmd1203"><span class="btn-text">展示末影箱</span><span class="layui-badge">暂不可用</span>&nbsp;&nbsp;&nbsp;</button>
+                                </div>
+                            </div>
+                            <br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd13"><span class="btn-text">背包（等效于 B 键）</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/bp</span></button>
+                            <br><br>
+                            <div class="layui-row">
+                                <div class="layui-col-xs6">
+                                    <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd1401"><span class="btn-text">绑定</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/bind</span></button>
+                                </div>
+                                <div class="layui-col-xs6">
+                                    <button type="button" class="layui-btn layui-btn-fluid normal-btn-2" lay-on="cmd1402"><span class="btn-text">解绑</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/unbind</span></button>
+                                </div>
+                            </div>
+                            <br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd15"><span class="btn-text">地标指南</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/pw</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd16"><span class="btn-text">箱子商店指南</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/qs</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd17"><span class="btn-text">动作</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/dz</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd18"><span class="btn-text">红包</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/rp new</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd19"><span class="btn-text">转账</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-orange">金币</span><span class="layui-badge layui-bg-blue">/pay 玩家名 数量</span></button>
+                            <br><br>
+                        </div>
+                        <div class="layui-tab-item">
+                            <button type="button" class="layui-btn layui-btn-fluid yellow-btn" lay-on="cmd20"><span class="btn-text">充能飞行</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge vip-bg">VIP</span><span class="layui-badge layui-bg-blue">/ffly</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid yellow-btn" lay-on="cmd21"><span class="btn-text">飞行（等效于 R 键）</span><span class="layui-badge mvp-bg">MVP</span><span class="layui-badge ceo-bg">CEO</span><span class="layui-badge layui-bg-blue">/fly</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid yellow-btn" lay-on="cmd22"><span class="btn-text">随身工作台</span><span class="layui-badge vip-bg">VIP</span><span class="layui-badge mvp-bg">MVP</span><span class="layui-badge ceo-bg">CEO</span><span class="layui-badge layui-bg-blue">/gz</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid yellow-btn" lay-on="cmd23"><span class="btn-text">随身末影箱</span><span class="layui-badge vip-bg">VIP</span><span class="layui-badge mvp-bg">MVP</span><span class="layui-badge ceo-bg">CEO</span><span class="layui-badge layui-bg-blue">/eb</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid yellow-btn" lay-on="cmd24"><span class="btn-text">物品戴头上</span><span class="layui-badge mvp-bg">MVP</span><span class="layui-badge ceo-bg">CEO</span><span class="layui-badge layui-bg-blue">/hat</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid yellow-btn" lay-on="cmd25"><span class="btn-text">转账</span><span class="layui-badge ceo-bg">CEO</span><span class="layui-badge">水晶</span><span class="layui-badge layui-bg-blue">/points pay 玩家名 数量</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid yellow-btn" lay-on="cmd26"><span class="btn-text">免费修复装备</span><span class="layui-badge ceo-bg">CEO</span><span class="layui-badge layui-bg-blue">/repair</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid yellow-btn" lay-on="cmd27"><span class="btn-text">拆卸附魔</span><span class="layui-badge ceo-bg">CEO</span><span class="layui-badge layui-bg-blue">/es deenchant</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid yellow-btn" lay-on="cmd28"><span class="btn-text">调整晴天</span><span class="layui-badge ceo-bg">CEO</span><span class="layui-badge layui-bg-blue">/sun</span></button>
+                            <br><br>
+                        </div>
+                        <div class="layui-tab-item">
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd29"><span class="btn-text">领地总帮助</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/res</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd30"><span class="btn-text">查看有权限领地</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/res list</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd31"><span class="btn-text">创建领地</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/res create 领地名</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd32"><span class="btn-text">删除领地</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge">需要确认</span><span class="layui-badge layui-bg-blue">/res remove 领地名</span></button>
+                            <br><br>
+                            <hr class="normal-line">
+                            <br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd33"><span class="btn-text">领地设置</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/res set</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd34"><span class="btn-text">给玩家基础权限</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/res padd 玩家名</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd35"><span class="btn-text">单独设置玩家权限</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/res pset 玩家名</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd36"><span class="btn-text">移除玩家基础权限</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/res pdel 玩家名</span></button>
+                            <br><br>
+                            <hr class="normal-line">
+                            <br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd37"><span class="btn-text">传送至领地</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/res tp 领地名</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd38"><span class="btn-text">面向你看的方向扩展 X 格领地</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/res expand X</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd39"><span class="btn-text">转让领地</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge">需要确认</span><span class="layui-badge layui-bg-blue">/res give 领地名 玩家名</span></button>
+                            <br><br>
+                        </div>
+                        <div class="layui-tab-item layui-show">
+                            <h1>还在编写！</h1>
+                            <br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd41"><span class="btn-text">地皮总帮助</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps</span></button>
+                            <br><br>
+                            <hr class="normal-line">
+                            <br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd42"><span class="btn-text">随机领取地皮</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps auto</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd43"><span class="btn-text">领取脚下地皮</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps c</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd44"><span class="btn-text">清空地皮</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge">需要确认</span><span class="layui-badge layui-bg-blue">/ps clear</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd45"><span class="btn-text">放弃地皮</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge">需要确认</span><span class="layui-badge layui-bg-blue">/ps delete</span></button>
+                            <br><br>
+                            <hr class="normal-line">
+                            <br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd45"><span class="btn-text">回到地皮</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps h</span></button>
+                            <br><br>
+                        </div>
+                        <div class="layui-tab-item">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="layui-elem-field half2">
+            <legend>君庭阁 - 信息查询区</legend>
+            <div class="layui-field-box">
+                <blockquote class="layui-elem-quote">若有重要内容未写出，可联系凌云增加</blockquote>
+                <div class="layui-tab layui-tab-brief">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this">阶级升级要求</li>
+                        <li>阶级升级奖励</li>
+                    </ul>
+                    <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show">
+                            <table class="layui-table">
+                                <colgroup>
+                                    <col width="59">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>阶级</th>
+                                        <th>金币 / 万</th>
+                                        <th>在线 / 小时</th>
+                                        <th>小麦 (收获)</th>
+                                        <th>铁矿 (挖掘)</th>
+                                        <th>金矿 (挖掘)</th>
+                                        <th>钻矿 (挖掘)</th>
+                                        <th>其他特殊</th>
+                                    </tr> 
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>0.5</td>
+                                        <td>2</td>
+                                        <td>20</td>
+                                        <td>浅层 30</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>24</td>
+                                        <td>200</td>
+                                        <td>深层 200</td>
+                                        <td>深层 200</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>50</td>
+                                        <td>500</td>
+                                        <td>深层 500</td>
+                                        <td>深层 500</td>
+                                        <td>-</td>
+                                        <td>吃蛋糕 50 片</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>80</td>
+                                        <td>1000</td>
+                                        <td>深层 1000</td>
+                                        <td>深层 1000</td>
+                                        <td>深层 1000</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>8</td>
+                                        <td>100</td>
+                                        <td>2000</td>
+                                        <td>深层 2000</td>
+                                        <td>深层 2000</td>
+                                        <td>-</td>
+                                        <td>使用 2000 次水桶</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>10</td>
+                                        <td>150</td>
+                                        <td>8000</td>
+                                        <td>深层 5000</td>
+                                        <td>深层 5000</td>
+                                        <td>-</td>
+                                        <td>击杀玩家 1000 次</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>15</td>
+                                        <td>200</td>
+                                        <td>10000</td>
+                                        <td>深层 7000</td>
+                                        <td>深层 7000</td>
+                                        <td>深层 3000</td>
+                                        <td>钓鱼 1000 次</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>20</td>
+                                        <td>300</td>
+                                        <td>12000</td>
+                                        <td>深层 9000</td>
+                                        <td>深层 9000</td>
+                                        <td>深层 5000</td>
+                                        <td>钓鱼 2000 次</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>25</td>
+                                        <td>400</td>
+                                        <td>15000</td>
+                                        <td>深层 10000</td>
+                                        <td>深层 10000</td>
+                                        <td>深层 6000</td>
+                                        <td>钓鱼 3000 次</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>X</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="layui-tab-item">
+                            <table class="layui-table">
+                                <colgroup>
+                                    <col width="59">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>阶级</th>
+                                        <th>铭牌</th>
+                                        <th>bp格子数量</th>
+                                        <th>领地数量</th>
+                                        <th>领地大小</th>
+                                        <th>圈地费用 / 格</th>
+                                        <th>家数量</th>
+                                    </tr> 
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0</td>
+                                        <td><span class="layui-badge jj0">萌新</span></td>
+                                        <td><span>0</span></td>
+                                        <td><span>1</span></td>
+                                        <td><span>30x30</span></td>
+                                        <td><span>0.5</span></td>
+                                        <td><span>1</span></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><span class="layui-badge jj1">阶级1</span></td>
+                                        <td><span>9</span></td>
+                                        <td><span>2</span></td>
+                                        <td><span>50x50</span></td>
+                                        <td><span>0.46</span></td>
+                                        <td><span>2</span></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><span class="layui-badge jj2">阶级2</span></td>
+                                        <td><span>9</span></td>
+                                        <td><span>3</span></td>
+                                        <td><span>70x70</span></td>
+                                        <td><span>0.43</span></td>
+                                        <td><span>3</span></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><span class="layui-badge jj3">阶级3</span></td>
+                                        <td><span>18</span></td>
+                                        <td><span>4</span></td>
+                                        <td><span>100x100</span></td>
+                                        <td><span>0.4</span></td>
+                                        <td><span>4</span></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>4</td>
+                                        <td><span class="layui-badge jj4">阶级4</span></td>
+                                        <td><span>18</span></td>
+                                        <td><span>5</span></td>
+                                        <td><span>130x130</span></td>
+                                        <td><span>0.37</span></td>
+                                        <td><span>5</span></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>5</td>
+                                        <td><span class="layui-badge jj5">阶级5</span></td>
+                                        <td><span>27</span></td>
+                                        <td><span>6</span></td>
+                                        <td><span>150x150</span></td>
+                                        <td><span>0.35</span></td>
+                                        <td><span>6</span></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>6</td>
+                                        <td><span class="layui-badge jj6">阶级6</span></td>
+                                        <td><span>27</span></td>
+                                        <td><span>7</span></td>
+                                        <td><span>170x170</span></td>
+                                        <td><span>0.32</span></td>
+                                        <td><span>7</span></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>7</td>
+                                        <td><span class="layui-badge jj7">阶级7</span></td>
+                                        <td><span>27</span></td>
+                                        <td><span>8</span></td>
+                                        <td><span>200x200</span></td>
+                                        <td><span>0.3</span></td>
+                                        <td><span>8</span></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>8</td>
+                                        <td><span class="layui-badge jj8">阶级8</span></td>
+                                        <td><span>36</span></td>
+                                        <td><span>9</span></td>
+                                        <td><span>230x230</span></td>
+                                        <td><span>0.27</span></td>
+                                        <td><span>9</span></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>9</td>
+                                        <td><span class="layui-badge jj9">阶级9</span></td>
+                                        <td><span>36</span></td>
+                                        <td><span>10</span></td>
+                                        <td><span>250x250</span></td>
+                                        <td><span>0.24</span></td>
+                                        <td><span>10</span></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>X</td>
+                                        <td><span class="layui-badge jjx">阶级X</span></td>
+                                        <td><span>-</span></td>
+                                        <td><span>-</span></td>
+                                        <td><span>-</span></td>
+                                        <td><span>-</span></td>
+                                        <td><span>-</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <!-- # JS # -->
+    <script src="layui/layui.js"></script>
+    <script src="static/js/js.js"></script>
+</body>
+</html>
