@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>君庭阁工具箱</title>
     <!--link rel="stylesheet" href="layui/css/layui.css"-->
 	<link href="//cdn.staticfile.org/layui/2.8.11/css/layui.css" rel="stylesheet">
     <link rel="stylesheet" href="static/css/style.css">
@@ -27,15 +28,15 @@
                 <blockquote class="layui-elem-quote">点击按钮即可复制</blockquote>
                 <div class="layui-tab layui-tab-brief">
                     <ul class="layui-tab-title">
-                        <li>基础</li>
+                        <li class="layui-this">基础</li>
                         <li>特殊</li>
                         <li>会员</li>
                         <li>领地</li>
-                        <li class="layui-this">地皮</li>
+                        <li>地皮</li>
                         <li>结婚</li>
                     </ul>
                     <div class="layui-tab-content">
-                        <div class="layui-tab-item">
+                        <div class="layui-tab-item layui-show">
                             <!-- Part 1 -->
                             <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd1"><span class="btn-text">请求传送</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/tpa 玩家名</span></button>
                             <br><br>
@@ -146,27 +147,45 @@
                             <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd39"><span class="btn-text">转让领地</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge">需要确认</span><span class="layui-badge layui-bg-blue">/res give 领地名 玩家名</span></button>
                             <br><br>
                         </div>
-                        <div class="layui-tab-item layui-show">
-                            <h1>还在编写！</h1>
+                        <div class="layui-tab-item">
                             <br>
-                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd41"><span class="btn-text">地皮总帮助</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps</span></button>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd40"><span class="btn-text">地皮总帮助</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps</span></button>
                             <br><br>
                             <hr class="normal-line">
                             <br>
-                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd42"><span class="btn-text">随机领取地皮</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps auto</span></button>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd41"><span class="btn-text">随机领取地皮</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps auto</span></button>
                             <br><br>
-                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd43"><span class="btn-text">领取脚下地皮</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps c</span></button>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd42"><span class="btn-text">领取脚下地皮</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps c</span></button>
                             <br><br>
-                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd44"><span class="btn-text">清空地皮</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge">需要确认</span><span class="layui-badge layui-bg-blue">/ps clear</span></button>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd43"><span class="btn-text">清空地皮</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge">需要确认</span><span class="layui-badge layui-bg-blue">/ps clear</span></button>
                             <br><br>
-                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd45"><span class="btn-text">放弃地皮</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge">需要确认</span><span class="layui-badge layui-bg-blue">/ps delete</span></button>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd44"><span class="btn-text">放弃地皮</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge">需要确认</span><span class="layui-badge layui-bg-blue">/ps delete</span></button>
                             <br><br>
                             <hr class="normal-line">
                             <br>
                             <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd45"><span class="btn-text">回到地皮</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps h</span></button>
                             <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd46"><span class="btn-text">访问地皮</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps v [玩家名/地皮编号]</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd47"><span class="btn-text">设置地皮传送点</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps sh</span></button>
+                            <br><br>
+                            <hr class="normal-line">
+                            <br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd48"><span class="btn-text">申请合并地皮</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge">需要对方确认</span><span class="layui-badge layui-bg-blue">/ps m</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd49"><span class="btn-text">取消合并地皮</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps um</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd50"><span class="btn-text">给予他人限时权限</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps add 玩家名</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd51"><span class="btn-text">给予他人权限</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps t 玩家名</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd52"><span class="btn-text">阻止他人进入</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps d 玩家名</span></button>
+                            <br><br>
+                            <button type="button" class="layui-btn layui-btn-fluid normal-btn" lay-on="cmd53"><span class="btn-text">取消权限 / 阻止</span>&nbsp;&nbsp;&nbsp;<span class="layui-badge layui-bg-blue">/ps remove 玩家名</span></button>
+                            <br><br>
                         </div>
                         <div class="layui-tab-item">
+                            <h1>还在编写！</h1>
                         </div>
                     </div>
                 </div>
